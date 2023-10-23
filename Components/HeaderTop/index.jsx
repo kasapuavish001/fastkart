@@ -123,7 +123,7 @@ const index = () => {
                               <Image
                                 className={styles.image}
                                 src={item.url}
-                                alt=""
+                                alt="flags"
                                 width="20"
                                 height="20"
                               />
