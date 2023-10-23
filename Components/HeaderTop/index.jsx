@@ -16,7 +16,7 @@ const index = () => {
     {
       id: "1",
       name: "English",
-      url: "../../public/assets/images/united-kingdom.png",
+      url: "../../public/assests/images/united-kingdom.png",
     },
     {
       id: "2",
