@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./HeaderTop.module.scss";
 import Image from "next/image";
-import DownIcon from "../../public/assests/icons/angle-small-down.svg";
+import DownIcon from "/icons/angle-small-down.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -16,17 +16,17 @@ const index = () => {
     {
       id: "1",
       name: "English",
-      url: "../../public/assests/images/united-kingdom.png",
+      url: "/images/united-kingdom.png",
     },
     {
       id: "2",
       name: "Germany",
-      url: "../../public/assets/images/germany.png",
+      url: "/images/germany.png",
     },
     {
       id: "3",
       name: "Turkish",
-      url: "../../public/assets/images/turkish.png",
+      url: "/images/turkish.png",
     },
   ];
 
