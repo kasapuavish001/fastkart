@@ -1,0 +1,37 @@
+.main .colorOrange {
+  color: #e56736;
+}
+.main .title {
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 75px;
+}
+.main .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.main .section .hbox {
+  display: inline;
+}
+.main .section .subtitle {
+  color: #1f1e42;
+  font-size: 55px;
+  font-family: PT Sans;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1.1;
+  width: 40%;
+  display: inline;
+  border-bottom: 5px solid;
+}
+.main .section .parablock {
+  width: 60%;
+}
+.main .section p {
+  font-size: 16px;
+  color: #1f1e42;
+  line-height: 2;
+  opacity: 0.65;
+}

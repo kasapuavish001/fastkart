@@ -1,0 +1,115 @@
+@import "../../styles/_mixin.scss";
+
+.slider {
+  width: 50%;
+  @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    display: none;
+  }
+}
+.text {
+  a {
+    color: lightblue;
+  }
+}
+
+
+
+.main {
+  background-color: #0da487;
+
+  &.darkMode {
+    background-color: darkcyan;
+  }
+  .ads {
+    font-size: small;
+    line-height: 1.2;
+    font-weight: 500;
+    color: white;
+    padding: 5px;
+    @include flex;
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+      justify-content: end;
+    }
+    .box {
+      .arrow {
+        width: 20px;
+        height: 25px;
+      }
+      ul {
+        @include flex;
+        .showlist {
+          @include flex;
+          color: white;
+          gap: 5px;
+          .image {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .right {
+          z-index: 9;
+          display: inline-block;
+          margin-right: 4px;
+          border-right: 2px solid rgba(234, 229, 229, 0.3);
+          position: relative;
+          .clickcountry {
+            background-color: white;
+            padding: 5px;
+            width: 150px;
+            box-shadow: -2px 2px 18px -5px rgba(0, 0, 0, 0.39);
+            -webkit-box-shadow: -2px 2px 18px -5px rgba(0, 0, 0, 0.39);
+            -moz-box-shadow: -2px 2px 18px -5px rgba(0, 0, 0, 0.39);
+            @include flex;
+            align-items: start;
+            position: absolute;
+            right: 8px;
+            flex-direction: column;
+
+            li {
+              padding: 10px 10px;
+              width: 100%;
+              button {
+                width: 100%;
+                @include flex;
+                .image {
+                  flex: 1;
+                }
+                p {
+                  flex: 3;
+                }
+              }
+            }
+            p {
+              color: black;
+            }
+          }
+        }
+        .left {
+          z-index: 9;
+          @include flex;
+          margin: 0 4px;
+          color: white;
+          position: relative;
+          .langs {
+            background-color: white;
+            color: black;
+            padding: 5px;
+            // width: 50px;
+            box-shadow: -2px 2px 18px -5px rgba(0, 0, 0, 0.39);
+            -webkit-box-shadow: -2px 2px 18px -5px rgba(0, 0, 0, 0.39);
+            -moz-box-shadow: -2px 2px 18px -5px rgba(0, 0, 0, 0.39);
+            @include flex;
+            align-items: start;
+            position: absolute;
+            top: 25px;
+            right: 8px;
+            flex-direction: column;
+            li {
+              padding: 10px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

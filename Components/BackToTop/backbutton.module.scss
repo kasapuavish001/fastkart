@@ -1,0 +1,21 @@
+@import "../../styles/_mixin.scss";
+.btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #0da487;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  button {
+    color: white;
+    .icon{
+        width: 20px;
+        height: 20px;
+        transform: rotate(180deg);
+    }
+  }
+}
