@@ -16,17 +16,17 @@ const index = () => {
     {
       id: "1",
       name: "English",
-      url: "/../public/assests/images/united-kingdom.PNG",
+      url: "images/united-kingdom.png",
     },
     {
       id: "2",
       name: "Germany",
-      url: "/../public/assests/images/germany.PNG",
+      url: "/../public/assests/images/germany.png",
     },
     {
       id: "3",
       name: "Turkish",
-      url: "/../public/assests/images/turkish.PNG",
+      url: "/../public/assests/images/turkish.png",
     },
   ];
 
