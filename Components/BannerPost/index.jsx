@@ -1,8 +1,9 @@
 import styles from "./banner.module.scss";
-import img from "../../public/assests/images/post1.jpg";
+
 import Image from "next/image";
 import Link from "next/link";
 import ArrRight from '../../public/assests/icons/arrow-right.svg'
+
 const data = [
   {
     id: "1",
