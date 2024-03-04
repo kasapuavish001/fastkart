@@ -98,7 +98,7 @@ const index = () => {
                                             src={
                                                 SelectedOptions.url
                                                     ? SelectedOptions.url
-                                                    : "/../public/assests/images/united-states.png"
+                                                    : { flag1 }
                                             }
                                             alt=""
                                             width="20"
