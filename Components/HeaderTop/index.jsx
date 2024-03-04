@@ -6,6 +6,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import DownIcon from "../../public/assests/icons/angle-small-down.svg";
+import flag2 from '../../public/assests/images/germany.png';
+import flag3 from '../../public/assests/images/turkish.png';
+import flag1 from '../../public/assests/images/united-kingdom.png';
 import styles from "./HeaderTop.module.scss";
 const index = () => {
 
@@ -16,17 +19,17 @@ const index = () => {
         {
             id: "1",
             name: "English",
-            url: "/images/united-kingdom.png",
+            url: flag1,
         },
         {
             id: "2",
             name: "Germany",
-            url: "/images/germany.png",
+            url: flag2,
         },
         {
             id: "3",
             name: "Turkish",
-            url: "/images/turkish.png",
+            url: flag3,
         },
     ];
 
@@ -158,31 +161,6 @@ const index = () => {
                             </li>
                         </ul>
                     </div>
-                    {Show && (
-                        <ul className={styles.clickcountry}>
-                            {Options.map((item) => {
-                                return (
-                                    <li>
-                                        <button
-                                            onClick={() => {
-                                                SetSelectedOptions(item);
-                                                SetShow(false);
-                                            }}
-                                        >
-                                            <Image
-                                                className={styles.image}
-                                                src={item.url}
-                                                alt="flags"
-                                                width="20"
-                                                height="20"
-                                            />
-                                            <p>{item.name}</p>
-                                        </button>
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    )}
                 </div>
             </div>
         </div>
