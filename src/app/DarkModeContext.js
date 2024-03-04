@@ -1,11 +1,10 @@
 "use client";
 
 import { createContext, useState } from "react";
-import { ThemeProvider } from "next-themes";
 export const DarkModeContext = createContext();
 
 export function DarkModeProvider({ children }) {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
