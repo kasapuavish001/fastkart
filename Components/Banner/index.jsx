@@ -8,7 +8,10 @@ import BannerPost from "../BannerPost";
 import styles from "./banner.module.scss";
 
 import { useTheme } from "next-themes";
-import img from "../../public/assests/images/post1.jpg";
+import img1 from "../../public/assests/images/post1.jpg";
+import img2 from "../../public/assests/images/post2.jpg";
+import img3 from "../../public/assests/images/post3.jpg";
+import img4 from "../../public/assests/images/post4.jpg";
 const index = () => {
     var settings = {
         infinite: true,
@@ -53,28 +56,28 @@ const index = () => {
     const data = [
         {
             id: "1",
-            url: img,
+            url: img1,
             dic: "5% OFF",
             title: "Hot Deals on New Items",
             subtitle: "Daily Essentials Eggs & Dairy",
         },
         {
             id: "2",
-            url: "/../public/assests/images/post2.jpg",
+            url: img2,
             dic: "5% OFF",
             title: "Buy More & Save More",
             subtitle: "Fresh Vegetables",
         },
         {
             id: "3",
-            url: "/../public/assests/images/post3.jpg",
+            url: img3,
             dic: "5% OFF",
             title: "Organic Meat Prepared",
             subtitle: "Delivered to Your Home",
         },
         {
             id: "4",
-            url: "/../public/assests/images/post4.jpg",
+            url: img4,
             dic: "5% OFF",
             title: "Buy More & Save More",
             subtitle: "Nuts & Snacks",
