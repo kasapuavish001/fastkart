@@ -1,4 +1,5 @@
 "use client";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useState } from "react";
 import Slider from "react-slick";
@@ -6,9 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import DownIcon from "../../public/assests/icons/angle-small-down.svg";
 import styles from "./HeaderTop.module.scss";
-
-import { useTheme } from "next-themes";
 const index = () => {
+
     const { theme, setTheme } = useTheme();
     const [Show, SetShow] = useState(false);
     const [Show1, SetShow1] = useState(false);
@@ -16,17 +16,17 @@ const index = () => {
         {
             id: "1",
             name: "English",
-            url: "/../public/assests/images/united-kingdom.png",
+            url: "/images/united-kingdom.png",
         },
         {
             id: "2",
             name: "Germany",
-            url: "/../public/assests/images/germany.png",
+            url: "/images/germany.png",
         },
         {
             id: "3",
             name: "Turkish",
-            url: "/../public/assests/images/turkish.png",
+            url: "/images/turkish.png",
         },
     ];
 
@@ -107,7 +107,6 @@ const index = () => {
 
                                         <DownIcon className={styles.arrow} />
                                     </button>
-
                                     {Show && (
                                         <ul className={styles.clickcountry}>
                                             {Options.map((item) => {
@@ -159,6 +158,31 @@ const index = () => {
                             </li>
                         </ul>
                     </div>
+                    {Show && (
+                        <ul className={styles.clickcountry}>
+                            {Options.map((item) => {
+                                return (
+                                    <li>
+                                        <button
+                                            onClick={() => {
+                                                SetSelectedOptions(item);
+                                                SetShow(false);
+                                            }}
+                                        >
+                                            <Image
+                                                className={styles.image}
+                                                src={item.url}
+                                                alt="flags"
+                                                width="20"
+                                                height="20"
+                                            />
+                                            <p>{item.name}</p>
+                                        </button>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    )}
                 </div>
             </div>
         </div>
