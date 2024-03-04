@@ -1,9 +1,10 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import img5 from '../../../public/assests/images/profile.jpg';
 import img1 from '../../../public/assests/images/secondslider/11.png';
-import img2 from '../../../public/assests/images/secondslider/20.png';
 import img3 from '../../../public/assests/images/secondslider/15.png';
 import img4 from '../../../public/assests/images/secondslider/19.png';
+import img2 from '../../../public/assests/images/secondslider/20.png';
 import styles from "./trending.module.scss";
 const data = [
     {
@@ -78,7 +79,7 @@ const index = () => {
                     </div>
                     <div className={styles.profile}>
                         <div className={styles.img}>
-                            <Image src="/../public/assests/images/profile.jpg" className={styles.image} width={50} height={50} />
+                            <Image src={img5} className={styles.image} width={50} height={50} />
                         </div>
                         <div className={styles.details}>
                             <h3>Tina Mcdonnale</h3>
